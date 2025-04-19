@@ -30,7 +30,7 @@ exports.handler = async function(event, context) {
 
   const { data, error } = await supabase
     .from('vw_app_users')
-    .select('expired, keyactive, clientactive')
+    .select('expired, keyactive, clientactive, key, appname')
     .eq('key', appkey)
     .single(); // espera apenas 1 resultado
 
