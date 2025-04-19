@@ -1,0 +1,5 @@
+[build]
+  functions = "api"  # Caminho das suas funções
+
+[dev]
+  functions = "api"  # Caminho para desenvolvimento local
